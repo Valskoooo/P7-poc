@@ -11,7 +11,7 @@ import seaborn as sns
 #                                   CONFIG INITIALE DE L'APP                                        #
 #===================================================================================================#
 # Configurer un titre, une icône et un layout pour l'application
-st.set_page_config(page_title="P7 - POC", page_icon="🖥️", layout="centered", initial_sidebar_state="auto")
+st.set_page_config(page_title="P7 - POC", page_icon="📈", layout="centered", initial_sidebar_state="auto")
 
 #===================================================================================================#
 
@@ -35,9 +35,8 @@ with st.sidebar:
     if selected_photo is not None:
         st.image(f'./images/races/{selected_photo}.jpg', width=300)
 
-    st.button('Informations sur le dataset', key='dataset_info')
-
 with st.container():
+    st.header('📈 Dashboard')
     # Recuperations des informations du modeles
     race_name = selected_photo.split('_')[0].lower()
     model_data = load_model(selected_model)
