@@ -63,15 +63,15 @@ M (la magnitude des transformations): C'est le degré de transformation appliqu�
 
         st.download_button(label="Télécharger le plan prévisionnel",
                             data=PDFbyte,
-                            file_name="test.pdf",
+                            file_name="Plant_previsionnel_P7.pdf",
                             mime='application/octet-stream')
 
     with col2:
         st.text("📄 Note méthodologique")
-        with open("./documents/Modèle_Plan_prévisionnel_RandAugment.pdf", "rb") as pdf_file:
+        with open("./documents/Note_Methodologique_P7.pdf", "rb") as pdf_file:
             PDFbyte = pdf_file.read()
 
         st.download_button(label="Télécharger la note méthodologique",
                             data=PDFbyte,
-                            file_name="test.pdf",
+                            file_name="Note_Methodologique_P7.pdf",
                             mime='application/octet-stream')
